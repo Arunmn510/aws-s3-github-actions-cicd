@@ -38,3 +38,29 @@ json
     "Resource": "arn:aws:s3:::YOUR_BUCKET_NAME/*"
   }]
 }
+
+3️⃣ Add GitHub Secrets
+In your GitHub repo:
+
+Settings → Secrets → Actions → New repository secret
+
+Add these:
+
+AWS_ACCESS_KEY_ID
+
+AWS_SECRET_ACCESS_KEY
+
+AWS_REGION (e.g., us-east-1)
+
+S3_BUCKET (your bucket name)
+
+4️⃣ How it Works
+Any push to main branch triggers the workflow
+
+GitHub Actions syncs the website/ folder to your S3 bucket
+
+5️⃣ View Your Website
+Go to the bucket's Static Website Hosting endpoint
+
+Example: http://my-cicd-site-bucket.s3-website-us-east-1.amazonaws.com
+
