@@ -64,3 +64,42 @@ Go to the bucket's Static Website Hosting endpoint
 
 Example: http://my-cicd-site-bucket.s3-website-us-east-1.amazonaws.com
 
+
+✅ How to Set Up
+
+1️⃣ Create Your Repo
+
+git init aws-s3-github-actions-cicd
+
+cd aws-s3-github-actions-cicd
+
+2️⃣ Add Files
+Add website/ with your HTML/CSS
+
+Add .github/workflows/deploy.yml
+
+Add README.md
+
+3️⃣ Push to GitHub
+
+1 git add .
+2 git commit -m "Initial commit"
+3 git branch -M main
+4 git remote add origin <YOUR-GITHUB-REPO-URL>
+5 git push -u origin main
+
+4️⃣ Add Secrets on GitHub
+
+GitHub → Your Repo → Settings → Secrets → Actions
+
+Add:
+AWS_ACCESS_KEY_ID
+
+AWS_SECRET_ACCESS_KEY
+
+AWS_REGION
+
+S3_BUCKET
+
+✅ Result
+✅ Every push to main → your website auto-deploys to S3 🚀
