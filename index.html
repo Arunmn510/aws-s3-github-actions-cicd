@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head >
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <script src="https://kit.fontawesome.com/eaec2ab340.js" crossorigin="anonymous"></script>
+    <body>
+        <div id="header">
+           <div class="container">
+            <nav>
+                <img src="a.jpg" class="logo" >
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Devops Engineer</p>
+                <h1>Hi, I'm<span> Arun M N</span> <br>From Bengaluru</h1>
+            </div>
+           </div>
+        </div>
+
+
+
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col1">
+                        <img src="arunph.jpg" >
+                    </div>
+                    <div class="about-col2">
+                        <h1 class="sub-title">About me</h1>
+                        <p class="about-me">As a recent Bachelors of Computer Application graduate, I bring a potent blend of academic excellence
+                             and hands-on backend development experience garnered through a rigorous internship. Certified as
+                             a Devops Engineer, I wield mastery in a diverse array of languages and tools including AWS, DevOps, Linux, CCNA. My forte lies in prompt engineering, where I seamlessly integrate technical
+                              expertise with analytical acumen to overcome complex challenges.</p>
+                        <div class="tab-titels">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contains active-tab" id="skills">
+                            <ul>
+                                <li><span>Devops Engineer</span><br> Certified in AWS, DevOps, Linux, CCNA and MySQl</li>
+                                <li><span>web Development</span><br> Desiging web or app interface Using HTML, CSS</li>
+                            </ul>   
+                        </div>
+                        <div class="tab-contains" id="experience">
+                            <ul>
+                                <li><span>Present</span><br> Pursuing a Devops course at Besant Technology, Bangalore.  </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contains" id="education">
+                            <ul>
+                                <li><span>2023</span><br>Bachelor of computer Application, East West Institute of Technology, Bangalore</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    
+                    <div>
+                        <i class="fa-brands fa-java"></i>
+                        <h2>Devops Engineer Cource</h2>
+                        <p>Focusing on key technologies including AWS, DevOps, Linux, CCNA, SQL, HTML, CSS, JavaScript, Bootstrap JDBC and 
+                            Spring Boot.The course provides hands-on experience in Java for backend development, SQL for database management, and front-end 
+                            application to create seamless user interfaces. </p>
+                        <a href="https://github.com/Arunmn510">Learn more</a>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+
+        <div id="portfolio">
+           <div class="container">
+                <h1 class="sub-title">My Certificate</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="#" >
+                        <div class="layer">
+                            <h3>Devops Engineer Certificate</h3>
+                            <p>I hold a Devops Engineer certification, validating my mastery in Devops programming language and related technologies,
+                                 showcasing proficiency in developing scalable and efficient applications.</p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+           </div>
+        </div>
+
+
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-regular fa-paper-plane"></i> arunmn510@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i> 8880049084</p>
+                        <div class="social-icons">
+                            <a href="arunmn510@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                            <a href="https://www.linkedin.com/in/arun-m-n-2a909034a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        </div>
+                        <a href="ARUN-M-N.pdf" download ><button class="btn">Download CV</button></a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontains = document.getElementsByClassName("tab-contains");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontain of tabcontains){
+                tabcontain.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw2WyXGWmvrMWGR-Wxc-uSkhZGnresmJ67iqtC79Hz85tvsD8hjSYv6r5PTFPkYqSa1KQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent successfully"
+                setTimeout(function(){msg.innerHTML = " "},1500)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</html>
