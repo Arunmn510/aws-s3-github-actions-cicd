@@ -105,5 +105,5 @@ S3_BUCKET
 ✅ Every push to main → your website auto-deploys to S3 🚀
 
 5. website preview
-
-<img width="2880" height="1800" alt="Screenshot (80)" src="https://github.com/user-attachments/assets/29954708-d3b9-4c6c-ac9d-72869a5f1a20" />
+6. 
+<img width="2880" height="1645" alt="Screenshot (80)" src="https://github.com/user-attachments/assets/0442a00d-3f10-4d8f-a126-984dc3452e8a" />
